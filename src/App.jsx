@@ -1,12 +1,16 @@
-import logo from './logo.svg';
+import { BrowserRouter } from 'react-router-dom';
+import { APIFetch } from './APIFetch';
 import './App.css';
-import Staff from './Staff';
+import AppRouter from './AppRouter';
 
 function App() {
   return (
+    <BrowserRouter>
+    <AppRouter />
     <div className="App">
-      <Staff />
+     <APIFetch />
     </div>
+    </BrowserRouter>
   );
 }
 
